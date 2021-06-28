@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Card/Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/product1c.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <nav style="display: flex; padding: 10px; background-color: #6F4E37;">
+            <img style="width: 70px; padding: 5px;" src="img/logo.jpg" alt="">
+            <a style=" padding: 10px; text-decoration: none; color: white; font-size: 17px; margin: 0 2rem;" href="#">Company Name</a>
+            <input style="width: 700px; padding: 5px 10px; font-size: 15px;" placeholder="Search For Your Desired Products" type="search" name="" id="">
+            <i style="margin-left: -12px;  background-color: rgb(235, 230, 230); padding: 15px 10px; margin-right: 10px;" class="fa fa-search" aria-hidden="true"></i>
+           <a href="#"> <button id="loginProduct" class="btn">LogIn</button></a>
+            <span style="color: white; padding: 10px 20px;">More</span>
+            <a href="cart.html" style="color: white; padding: 10px 20px; text-decoration: none;"><span>Cart</span></a>
+        </nav>
+    </header>
+    <div class="card-wrapper">
+        <div class="card">
+            <!-- card left -->
+            <div class="product-imgs">
+                <div class="img-display">
+                    <div class="img-showcase">
+                        <img id="product-main-image" src="img/shoe5.2.jpeg" alt="shoe image">
+                        <img src="img/shoe5.1.jpeg" alt="shoe image">
+                        <img src="img/shoe5.0.jpeg" alt="shoe image">
+                        <img src="img/shoe8.1.jpeg" alt="shoe image">
+                    </div>
+                </div>
+                <div class="img-select">
+                    <div class="img-item">
+                        <a href="#" data-id="1">
+                            <img src="img/shoe5.2.jpeg" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="2">
+                            <img src="img/shoe5.1.jpeg" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="3">
+                            <img src="img/shoe5.0.jpeg" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="4">
+                            <img src="img/shoe8.1.jpeg" alt="shoe image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- card right -->
+            <div class="product-content">
+                <br>
+                <h2 id="product-title" class="product-title">Red Tape</h2>
+                <a id="product-seller" href="#" class="product-link">visit Red Tape store</a>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.7(21)</span>
+                </div>
+
+                <div class="product-price">
+                    <p class="last-price">Old Price: <span>$257.00</span></p>
+                    <p class="new-price">New Price: <span>$</span> <span id="product-price">249.00</span>(5%)</span>
+                    </p>
+                </div>
+
+                <div class="product-detail">
+                    <h2>about this item: </h2>
+                    <p>Choose aa style from wide range of sneakers exclusively designed by Red Tape. </p>
+                    <p>These are worn usually with casual and informal attires but it also depends upon the choice of the wearer. Our Casual shoes are available in eye catching looks and designs.</p>
+
+                    <ul>
+                        <li>Color: <span>White</span></li>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Category: <span>Shoes</span></li>
+                        <li>Shipping Area: <span>All over the world</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                    </ul>
+                </div>
+
+                <div class="purchase-info">
+                   <div class="select-items">
+                       <select>01</select>
+                        <select>02</select>
+                        <select>03</select>
+                        <select>04</select>
+                        <select>05</select>
+                        <select>06</select>
+                    </div>
+                    <a href="#"><button onclick="toastPopUp();" type="button" class="btn">
+                            Add to Cart <i class="fas fa-shopping-cart"></i>
+                            <div id="snackbar"></div>
+                        </button></a>
+                    <button type="button" class="btn">Compare</button>
+                </div>
+
+              
+                   
+            <div class = "social-links">
+            <p>Share At: </p>
+            <a href = "https://www.facebook.com/facebook">
+              <i class = "fab fa-facebook-f"></i>
+            </a>
+            <a href = "https://twitter.com/?lang=en">
+              <i class = "fab fa-twitter"></i>
+            </a>
+            <a href = "https://www.instagram.com/">
+              <i class = "fab fa-instagram"></i>
+            </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Part -->
+    <!-- 
+     <footer class="container-fluid p-md-0 min-vw-100 ">
+      <div class="text-center  "  style="background-color: #926443; "><a href="#" style="color: black;">Back to top</a>
+      </div>
+
+      <div class="container-fluid p-md-0  ps-3 min-vw-100 "  style="background-color: #6F4E37; ">
+       
+          <div class="row align-items-start justify-content-around "> 
+
+            <div class="col " >
+              <p class="pt-3 m-0 " style="font-weight: bold;" bold>Get to know about us </p>
+              <p class="m-1"> <a href="#"  style="color: black;">About Us</a></p>
+              <p class="m-1"><a href="#"  style="color: black;">Careers</a></p>
+              <p class="m-1"><a href="#"  style="color: black;">Wholesale</a></p>
+            </div>
+            <div class="col">
+              <p class="pt-3 m-0" style="font-weight: bold;" bold>Connect with us</p>
+              <p class="m-1"> <a href="https://www.facebook.com/facebook"  style="color: black;"> <img  id="logo" src="Icons/Facebook.png" alt="zoom" width="25" height="25" /> Facebook</a></p>
+              <p class="m-1"><a href="https://twitter.com/?lang=en"  style="color: black;"><img  id="logo" src="/Icons/twitter.png" alt="zoom" width="25" height="25" /> Twitter</a></p>
+              <p class="m-1"><a href="https://www.instagram.com/"  style="color: black;"><img  id="logo" src="/Icons/instagram.png" alt="zoom" width="25" height="25" /> Instagram</a></p>
+              <p class="m-1"><a href="https://www.youtube.com/"  style="color: black;"><img  id="logo" src="/Icons/Youtube.png" alt="zoom" width="25" height="25" /> Youtube</a></p>
+            </div>
+            <div class="col " >
+              <p class="pt-3 m-0 " style="font-weight: bold;" bold>Help </p>
+              <p class="m-1"><a href="#"  style="color: black;">Payments </a></p>
+              <p class="m-1"><a href="#"  style="color: black;">Shipping</a></p>
+              <p class="m-1"><a href="#"  style="color: black;">Cancellation & Return</a></p>
+            </div>
+            <div class="col">
+              <p class="pt-3 m-0" style="font-weight: bold;" bold>Make Money with us</p>
+              <p class="m-1"> <a href="#"  style="color: black;">Return Policy</a></p>
+              <p class="m-1"><a href="#"  style="color: black;">Terms of use</a></p>
+              <p class="m-1"><a href="#"  style="color: black;">Security</a></p>
+              <p class="m-1"><a href="#"  style="color: black;">Privacy/a></p>
+            </div>
+          </div>
+      </div>
+
+    <div  class=" container-fluid p-md-0 text-center min-vw-100 "style="background-color: #6F4E37; height: 40px; font-weight: bold;" >© 2017–2021 Company, Inc. 
+    </div>
+
+  </footer> 
+-->
+    <script src="js/product1j.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Mobile.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg " style="background-color: #6F4E37;">
+            <div class="container-fluid">
+                <img style="width: 60px ; height: 30px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZR7cUPf7dwlO3L5MIXLTuYPvUgQSWCDGcEQ&usqp=CAU" alt="">
+                <a class="navbar-brand ml-2" href="index.html" style="color: white;">Company Name</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <form class="input-group ml-3 mb-3 mt-3">
+                        <input class="form-control" type="search" placeholder="Search For Your Desired Products" aria-label="Search">
+                        <button class="btn btn-light">
+                  <i>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+                </i>
+            </button>
+                    </form>
+                    <ul class="navbar-nav ">
+                        <!-- <div class="navbar_links"> -->
+                        <li class="nav-item">
+                            <div class="dropdown ml-3 mt-2 mb-2">
+                                <a href="login.html"><button class="btn btn-secondary"  style="color: white;">LOGIN</button></a>
+                                <div class="dropdown-menu">
+                                    <a href="signup.html" class="ml-2" style="color: blue;">New User? Sign Up</a>
+                                    <div class="mt-2 ml-3 gap-2 bak">
+                                        <a href="#">
+                                            <option class="mt-2">Profile</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2">Orders</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2">Wishlist</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2" value="rewards">Rewards</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2" value="giftcards">Giftcards</option>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="dropdown ml-4 mt-3">
+                                <a style="text-decoration: none; color: white;" href="#">MORE</a>
+                                <div class="dropdown-menu">
+                                    <div class="mt-2 gap-2 ml-3 bak">
+                                        <a href="#">
+                                            <option class="mt-2">Notification</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2">24*7 helpline</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2">Advertise</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2" value="rewards">Rewards</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2" value="giftcards">Giftcards</option>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item ml-4 mt-3 mr-5">
+                            <a style="text-decoration: none; color: white;" href="cart.html">CART</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar top end -->
+
+    <!-- nav item list  -->
+    <div class="container" style="z-index: 0;">
+        <table class="table">
+            <tr>
+                <th scope="col">
+                    <div class="dropdown dropdown-toggle">
+                        <span>Grocery</span>
+                        <div class="dropdownMenu">
+                            <div class="mt-2 gap-2 bak">
+                                <a href="#">
+                                    <option class="mt-2">Foods</a>
+                                <a href="#">
+                                    <option class="mt-2">Vegetables</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2">Kitchen Items</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="rewards">Pulses</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="giftcards">Basic Items</option>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="dropdown dropdown-toggle">
+                        <span>Electronics</span>
+                        <div class="dropdownMenu">
+                            <div class="mt-2 gap-2 bak">
+                                <a href="Mobile.html">
+                                    <option class="mt-2">Mobile</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2">Computer</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2">Powerbank</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="rewards">Audio</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="giftcards">Laptop</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="giftcards">Camera</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="giftcards">Tablet</option>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th scope="col">
+                    <th scope="col">
+                        <div class="dropdown dropdown-toggle">
+                            <span>Fashion</span>
+                            <div class="dropdownMenu">
+                                <div class="mt-2 gap-2 bak">
+                                    <a href="#">
+                                        <option class="mt-2">Mens Wear</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Womens Wear</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Kids Wear</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="rewards">Mens Footwear</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Womens Footwear</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Kids Footwear</option>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </th>
+                <th scope="col">
+                    <th scope="col">
+                        <div class="dropdown dropdown-toggle">
+                            <span>Travel</span>
+                            <div class="dropdownMenu">
+                                <div class="mt-2 gap-2 bak">
+                                    <a href="#">
+                                        <option class="mt-2">One Way</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Round Way</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">xyz</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="rewards">xyz</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">xyz</option>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </th>
+                <th scope="col">
+                    <th scope="col">
+                        <div class="dropdown dropdown-toggle">
+                            <span>Home Decor</span>
+                            <div class="dropdownMenu">
+                                <div class="mt-2 gap-2 bak">
+                                    <a href="#">
+                                        <option class="mt-2">Living</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Kitchen</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Bedroom</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="rewards">Home Decor</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Kids Furniture</option>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </th>
+                <th scope="col">
+                    <th scope="col">
+                        <div class="dropdown dropdown-toggle">
+                            <span>Toys,Beauty & More</span>
+                            <div class="dropdownMenu">
+                                <div class="mt-2 gap-2 bak">
+                                    <a href="#">
+                                        <option class="mt-2">Sports and fitness</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Books & Music</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Baby Care</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="rewards">Beauty & Personal Care</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Mens Grooming</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Nutrition & Healthcare</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Foods & Drinks</option>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </th>
+                <th scope="col">
+                    <th scope="col">
+                        <div class="dropdown dropdown-toggle">
+                            <span>Top Offers</span>
+                            <div class="dropdownMenu">
+                                <div class="mt-2 gap-2 bak">
+                                    <a href="#">
+                                        <option class="mt-2">Deals Of The Day</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Fashion Deals</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Big Steals </option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="rewards">New Launches</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Most Selling Deals</option>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    
+    <div class="container-fluid text-center p-4 security" id="security-page" style="display: block;">
+        <h3>Safe and Secure Shopping</h3><br>
+        <h4>Is it safe to use my credit/debit card on Company?</h4>
+        <span>Your online transaction on Company is secure with the highest levels of transaction security 
+            currently available on the Internet. Company uses 256-bit encryption technology to protect your
+            card information while securely transmitting it to the respective banks for payment processing.
+            All credit card and debit card payments on Company are processed through secure and trusted payment 
+            gateways managed by leading banks. Banks now use the 3D Secure password service for online transactions,
+            providing an additional layer of security through identity verification.</span>
+        <br>
+        <h4>Does Company store my credit/debit card infomation?</h4>
+        <span>Company stores the first 6 and last 4 digits of your card number in a secure and encrypted manner.
+            The first 6 digits (also known as the Bank Identification Number) are used to identify the bank name
+            and country where your card was issued. The first 6 and last 4 digits are together used for fraud detection
+            and prevention purposes.</span>
+        <br><br>
+        <h3>Payment Options</h3><br>
+        <h4>What credit/debit cards are accepted on Company?</h4>
+        <span>We accept VISA, MasterCard, Maestro, Rupay, American Express, Diner's Club and Discover credit/debit cards.</span>
+        <br>
+        <h4>Privacy Policy</h4>
+        <span>Company.com respects your privacy and is committed to protecting it. For more details, please see our Privacy Policy</span>
+
+
+  
+    </div>
+
+    <!-- Footer Part -->
+<footer class="container-fluid p-md-0 min-vw-100" >
+
+    <div class="container-fluid p-md-0  ps-3 min-vw-100 "  style="background-color: #6F4E37; ">
+        <div class="row align-items-start justify-content-around text-center " style="background-color: #926443; "> 
+        <a  href="#" style="background-color: #926443;color: rgb(255, 255, 255);">Back to top</a>  
+    </div>
+
+    <div class="container-fluid p-md-0  ps-3 min-vw-100 "  style="background-color: #6F4E37; ">
+        <div class="row align-items-start justify-content-around "  style="background-color: #6F4E37; "> 
+    
+            <div class="col " >
+                <p class="pt-3 m-0 " style="font-weight: bold;color: rgb(255, 255, 255)" bold>Get to know about us </p>
+                <p class="m-1"> <a href="#"  style="color: rgb(255, 255, 255);">About Us</a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Careers</a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Wholesale</a></p>
+            </div>
+            <div class="col">
+                <p class="pt-3 m-0" style="font-weight: bold; color: rgb(255, 255, 255)" bold>Connect with us</p>
+                <p class="m-1"> <a href="https://www.facebook.com/facebook"  style="color: rgb(255, 255, 255);"> <img  id="logo" src="Icons/Facebook.png" alt="zoom" width="25" height="25" /> Facebook</a></p>
+                <p class="m-1"><a href="https://twitter.com/?lang=en"  style="color: rgb(255, 255, 255);"><img  id="logo" src="/Icons/twitter.png" alt="zoom" width="25" height="25" /> Twitter</a></p>
+                <p class="m-1"><a href="https://www.instagram.com/"  style="color: rgb(255, 255, 255);"><img  id="logo" src="/Icons/instagram.png" alt="zoom" width="25" height="25" /> Instagram</a></p>
+                <p class="m-1"><a href="https://www.youtube.com/"  style="color: rgb(255, 255, 255);"><img  id="logo" src="/Icons/Youtube.png" alt="zoom" width="25" height="25" /> Youtube</a></p>
+            </div>
+            <div class="col " >
+                <p class="pt-3 m-0 " style="font-weight: bold; color: rgb(255, 255, 255)" bold>Help </p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Payments </a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 254, 254);">Shipping</a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Cancellation & Return</a></p>
+            </div>
+            <div class="col">
+                <p class="pt-3 m-0" style="font-weight: bold; color: rgb(255, 255, 255)" bold>Make Money with us</p>
+                <p class="m-1"> <a href="#"  style="color: rgb(255, 255, 255);">Return Policy</a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Terms of use</a></p>
+                <p class="m-1"><a href="SecurityDetails.html"    style="color: rgb(255, 255, 255);">Security</a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Privacy</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid p-md-0  ps-3 min-vw-100 "  style="background-color: #6F4E37; ">
+        <div class="row align-items-start justify-content-around text-center "  style="background-color: #6F4E37; "> 
+            <p class="pt-2" style="background-color: #6F4E37; height: 35px; font-weight: bold; color: rgb(255, 255, 255) ;">© 2017–2021 Company, Inc.</p>  
+    </div>
+
+    </div>
+    
+
+</footer>
+
+    <script src="./js/Mobile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+</html>

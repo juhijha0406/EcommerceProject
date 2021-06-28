@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics,Mobiles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Mobile.css">
+
+</head>
+
+<body onload="init()">
+
+    <!-- navbar top  -->
+
+    <div>
+        <nav class="navbar navbar-expand-lg " style="background-color: #6F4E37;">
+            <div class="container-fluid">
+                <img style="width: 60px ; height: 30px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZR7cUPf7dwlO3L5MIXLTuYPvUgQSWCDGcEQ&usqp=CAU" alt="">
+                <a class="navbar-brand ml-2" href="index.html" style="color: white;">Company Name</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <form class="input-group ml-3 mb-3 mt-3">
+                        <input class="form-control" type="search" placeholder="Search For Your Desired Products" aria-label="Search">
+                        <button class="btn btn-light">
+                  <i>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+                </i>
+            </button>
+                    </form>
+                    <ul class="navbar-nav ">
+                        <!-- <div class="navbar_links"> -->
+                        <li class="nav-item">
+                            <div class="dropdown ml-3 mt-2 mb-2">
+                                <a href="login.html"><button class="btn btn-secondary"  style="color: white;">LOGIN</button></a>
+                                <div class="dropdown-menu">
+                                    <a href="signup.html" class="ml-2" style="color: blue;">New User? Sign Up</a>
+                                    <div class="mt-2 ml-3 gap-2 bak">
+                                        <a href="#">
+                                            <option class="mt-2">Profile</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2">Orders</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2">Wishlist</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2" value="rewards">Rewards</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2" value="giftcards">Giftcards</option>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="dropdown ml-4 mt-3">
+                                <a style="text-decoration: none; color: white;" href="#">MORE</a>
+                                <div class="dropdown-menu">
+                                    <div class="mt-2 gap-2 ml-3 bak">
+                                        <a href="#">
+                                            <option class="mt-2">Notification</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2">24*7 helpline</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2">Advertise</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2" value="rewards">Rewards</option>
+                                        </a>
+                                        <a href="#">
+                                            <option class="mt-2" value="giftcards">Giftcards</option>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item ml-4 mt-3 mr-5">
+                            <a style="text-decoration: none; color: white;" href="cart.html">CART</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar top end -->
+
+    <!-- nav item list  -->
+    <div class="container" style="z-index: 0;">
+        <table class="table">
+            <tr>
+                <th scope="col">
+                    <div class="dropdown dropdown-toggle">
+                        <span>Grocery</span>
+                        <div class="dropdownMenu">
+                            <div class="mt-2 gap-2 bak">
+                                <a href="#">
+                                    <option class="mt-2">Foods</a>
+                                <a href="#">
+                                    <option class="mt-2">Vegetables</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2">Kitchen Items</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="rewards">Pulses</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="giftcards">Basic Items</option>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="dropdown dropdown-toggle">
+                        <span>Electronics</span>
+                        <div class="dropdownMenu">
+                            <div class="mt-2 gap-2 bak">
+                                <a href="Mobile.html">
+                                    <option class="mt-2">Mobile</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2">Computer</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2">Powerbank</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="rewards">Audio</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="giftcards">Laptop</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="giftcards">Camera</option>
+                                </a>
+                                <a href="#">
+                                    <option class="mt-2" value="giftcards">Tablet</option>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th scope="col">
+                    <th scope="col">
+                        <div class="dropdown dropdown-toggle">
+                            <span>Fashion</span>
+                            <div class="dropdownMenu">
+                                <div class="mt-2 gap-2 bak">
+                                    <a href="#">
+                                        <option class="mt-2">Mens Wear</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Womens Wear</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Kids Wear</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="rewards">Mens Footwear</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Womens Footwear</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Kids Footwear</option>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </th>
+                <th scope="col">
+                    <th scope="col">
+                        <div class="dropdown dropdown-toggle">
+                            <span>Travel</span>
+                            <div class="dropdownMenu">
+                                <div class="mt-2 gap-2 bak">
+                                    <a href="#">
+                                        <option class="mt-2">One Way</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Round Way</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">xyz</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="rewards">xyz</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">xyz</option>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </th>
+                <th scope="col">
+                    <th scope="col">
+                        <div class="dropdown dropdown-toggle">
+                            <span>Home Decor</span>
+                            <div class="dropdownMenu">
+                                <div class="mt-2 gap-2 bak">
+                                    <a href="#">
+                                        <option class="mt-2">Living</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Kitchen</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Bedroom</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="rewards">Home Decor</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Kids Furniture</option>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </th>
+                <th scope="col">
+                    <th scope="col">
+                        <div class="dropdown dropdown-toggle">
+                            <span>Toys,Beauty & More</span>
+                            <div class="dropdownMenu">
+                                <div class="mt-2 gap-2 bak">
+                                    <a href="#">
+                                        <option class="mt-2">Sports and fitness</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Books & Music</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Baby Care</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="rewards">Beauty & Personal Care</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Mens Grooming</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Nutrition & Healthcare</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Foods & Drinks</option>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </th>
+                <th scope="col">
+                    <th scope="col">
+                        <div class="dropdown dropdown-toggle">
+                            <span>Top Offers</span>
+                            <div class="dropdownMenu">
+                                <div class="mt-2 gap-2 bak">
+                                    <a href="#">
+                                        <option class="mt-2">Deals Of The Day</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Fashion Deals</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2">Big Steals </option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="rewards">New Launches</option>
+                                    </a>
+                                    <a href="#">
+                                        <option class="mt-2" value="giftcards">Most Selling Deals</option>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <!-- header end -->
+<main>
+
+
+    <!-- image slider -->
+
+    <div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="z-index: -1;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#"><img style="height: 25em; " src="Icons/banner.jpg" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img style="height: 25em; " src="Icons/banner1.png" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img style="height: 25em; " src="Icons/POco banner.png" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img style="height: 25em; " src="Icons/banner1.png" class="d-block w-100" alt="..."></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="border: none; opacity: 0;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+          </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="border: none; opacity: 0;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+          </button>
+        </div>
+    </div>
+
+
+    <!-- image slider ends -->
+
+    <div class="container-fluid"id="list-item" >
+        <div class="row align-items" >
+
+            <!-- side bar -->
+            <div class="col-2 bg-light">
+                <section class="border-right-5  ">
+                    <div class="p-3 bg-light  p-3 " style="width: 223px; ">
+                        <ul class="list-unstyled ps-0">
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapse show  fontBold " data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                  Categories
+                </button>
+                                <div class="collapse show  " id="home-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li class="p-1 pl-4"><a href="#" class="link-dark rounded ">Mobile</a></li>
+                                        <li class="p-1 pl-4"><a href="#" class="link-dark rounded ">Mobile Accesories</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1 ">
+                                <button class="btn btn-toggle align-items-center rounded collaps show fontBold" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                  Price
+                </button>
+                                <div class="collapse show" id="dashboard-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                                        <li class="p-1 pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                         7500-9500</label></a>
+                                        </li>
+                                        <li class="p-1  pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                         9500-11250</label></a>
+                                        </li>
+                                        <li class="p-1 pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                       11500-16000</label></a>
+                                        </li>
+                                        <li class="p-1 pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                          16500-18000</label></a>
+                                        </li>
+                                        <li class="p-1 pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                          18000-20000</label></a>
+                                        </li>
+                                        <li class="p-1 pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                          20000+</label></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapse show fontBold" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                 Brands
+                </button>
+                                <div class="collapse show" id="dashboard-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                                        <li class="p-1 pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                       realme</label></a>
+                                        </li>
+                                        <li class="p-1  pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                        POCO</label></a>
+                                        </li>
+                                        <li class="p-1 pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                         Mi</label></a>
+                                        </li>
+                                        <li class="p-1 pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                         SAMSUNG</label></a>
+                                        </li>
+                                        <li class="p-1 pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                         APPLE</label></a>
+                                        </li>
+                                        <li class="p-1 pl-4">
+                                            <a href="#" class="link-dark rounded"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                         VIVO</label></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapse show fontBold" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                  Operating System
+                </button>
+                                <div class="collapse show" id="account-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                                        <li class="p-1 pl-4"><a href="#" class="link-dark rounded">Android</a></li>
+                                        <li class="p-1 pl-4"><a href="#" class="link-dark rounded">iOS</a></li>
+                                        <li class="p-1 pl-4"><a href="#" class="link-dark rounded">Blackberry</a></li>
+                                        <li class="p-1 pl-4"><a href="#" class="link-dark rounded">Windows </a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+            </div>
+            <!-- sidebar ends -->
+
+            <!-- mobile-List -->
+
+
+            <!-- 1st row -->
+
+            <div class="col-10 pt-5 border-left">
+                <div class="container">
+                    <div class="row align-items justify-content-around">
+
+
+                        <div class="col-3 border p-3 shadow p-3 mb-5 bg-body rounded">
+                                <div class="dropdown">
+                                    <button class="dropbtn  bold border-0 bg-transparent w-100">
+                                        <div>
+                                            <img class="pl-5 " src="Icons/iphone.png" width="130px" height="150px" alt="img" /><br>
+                                            <h3 class="pt-3"><span>&#8377;</span>.<strong class="black ">46,000</strong></h3>
+                                        </div>
+                                        iphone 11</button>
+                                    <div class="dropbtn ">
+                                        <ul class="dropdown-menu  dropdown-content  dropbtn "  style="background-color:rgb(255, 255, 255) ; border-inline-end-width: 2px;" aria-labelledby="dropdownMenuButton1">
+                                            <li class="p-1 " width="100px">64 GB ROM</li>
+                                            <li class="p-1"> 15.49 cm Display</li>
+                                            <li class="p-1"> 12MP+ 12MP | 12Mp Front Camera</li>
+                                            <li class="p-1"> A13 Bionic Chip Processer</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                            </div>
+                        
+                            <div class="col-3 border p-3 shadow p-3 mb-5 bg-body rounded">
+                                <div class="dropdown">
+                                    <button class="dropbtn  bold border-0 bg-transparent w-100">
+                                        <div>
+                                            <img class="pl-5" src="Icons/Mi.png" width="130px" height="150px" alt="img" />
+                                            <h3 class="pt-3"><span>&#8377;</span>.<strong class="red">9,999</strong></h3>
+                                        </div>
+                                        Redmi 9 prime</button>
+                                    <div class="dropbtn ">
+                                        <ul class="dropdown-menu  dropdown-content  dropbtn "  style="background-color:rgb(255, 255, 255) ; border-inline-end-width: 2px;" aria-labelledby="dropdownMenuButton1">
+                                            <li>4 GB RAM|64 GB ROM</li>
+                                            <li> 16.59 cm Display </li>
+                                            <li> 13MP | 8Mp Front Camera</li>
+                                            <li> MediaTek Helio G80 Processer</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                            </div>
+                    
+
+
+
+                            <div class="col-3 border p-3 shadow p-3 mb-5 bg-body rounded">
+                                <div class="dropdown">
+                                    <button class="dropbtn  bold border-0 bg-transparent w-100">
+                                        <div>
+                                            <img class="pl-3" src="Icons/POCO.png" width="130px" height="150px" alt="img" />
+                                            <h3 class="pt-3"><span>&#8377;</span>.<strong class="red">14,999</strong></h3>
+                                        </div>
+                                        POCO X3</button>
+                                    <div class="dropbtn ">
+                                        <ul class="dropdown-menu  dropdown-content  dropbtn "  style="background-color:rgb(255, 255, 255) ; border-inline-end-width: 2px;" aria-labelledby="dropdownMenuButton1">
+                                            <li>6 GB RAM|64 GB ROM</li>
+                                            <li>16.94 cm Display </li>
+                                            <li>12MP+ 12MP | 20Mp Front Camera</li>
+                                            <li>Qualcomm Snapdragon 732G Processor</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                            </div>
+                    
+
+                            <div class="col-3 border p-3 shadow p-3 mb-5 bg-body rounded">
+                                <div class="dropdown">
+                                    <button class="dropbtn  bold border-0 bg-transparent w-100">
+                                        <div>
+                                            <img class="pl-lg-5" src="Icons/realme.png" width="130px" height="150px" alt="img" />
+                                <h3 class="pt-3"><span>&#8377;</span>.<strong class="red">17,999</strong></h3>
+                                        </div>
+                                        realme 8 Pro</button>
+                                    <div class="dropbtn ">
+                                        <ul class="dropdown-menu  dropdown-content  dropbtn "  style="background-color:rgb(255, 255, 255) ; border-inline-end-width: 2px;" aria-labelledby="dropdownMenuButton1">
+                                            <li>6GB RAM | 128 GB ROM</li>
+                                            <li> 16.26 cm Display</li>
+                                            <li> 108MP+12MP+12MP | 16Mp Front Camera</li>
+                                            <li>Qualcomm Snapdragon 732G Processor</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+
+                    </div>
+                </div>
+
+                <!-- 1st row ends -->
+
+                <div class="container-fluid pb-5">
+                    <div class="row flex-fill ">
+                        <div class="col-10 slider-width">
+
+                            <div>
+                                <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+                                    <div class="carousel-inner  ">
+                                        <div class="carousel-item active ">
+                                            <a href="#"><img style="height: 18em;width: 130em;  " src="Icons/iphone11-gallery2-2019.jfif" class="d-block w-100" alt="..."></a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="#"><img style="height: 18em; width: 130em; " src="Icons/oneplus banner.jpg" class="d-block w-100" alt="..."></a>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <a href="#"><img style="height: 18em;width: 130em; " src="Icons/samsung.jpg" class="d-block w-100" alt="..."></a>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <a href="#"><img style="height: 18em;width: 130em; " src="Icons/realme baner.jpg" class="d-block w-100" alt="..."></a>
+                                        </div>
+
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="border: none; opacity: 0;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="border: none; opacity: 0;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                    </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd row -->
+
+
+                <div class="container pt-2">
+                    <div class="row align-items justify-content-around">
+
+
+                        <div class="col-3 border p-3 shadow p-3 mb-5 bg-body rounded">
+                            <div class="dropdown">
+                                <button class="dropbtn  bold border-0 bg-transparent w-100">
+                                    <div>
+                                        <img class="pl-4 " src="Icons/Samsung.png" width="110px" height="150px" alt="img" /><br>
+                                        <h3 class="pt-3"><span>&#8377;</span>.<strong class="black ">1,05,999</strong></h3>
+                                    </div>
+                                    SAMSUNG Galaxy S21 Ultra</button>
+                                <div class="dropbtn ">
+                                    <ul class="dropdown-menu  dropdown-content  dropbtn "  style="background-color:rgb(255, 255, 255) ; border-inline-end-width: 2px;" aria-labelledby="dropdownMenuButton1">
+                                        <li>12 GB RAM | 256 GB ROM</li>
+                                        <li> 17.27 cm Display</li>
+                                        <li> 12MP+ 12MP | 40Mp Front Camera</li>
+                                        <li>Exynos 2100 Processor</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            
+                            <div class="col-3 border p-3 shadow p-3 mb-5 bg-body rounded">
+                                <div class="dropdown">
+                                    <button class="dropbtn  bold border-0 bg-transparent w-100">
+                                        <div>
+                                            <img class="pl-5" src="Icons/Vivo.png" width="130px" height="150px" alt="img" />
+                                <h3 class="pt-3"><span>&#8377;</span>.<strong class="red">9,990</strong></h3>
+                                        </div>
+                                        ViVO Y12s</button>
+                                    <div class="dropbtn ">
+                                        <ul class="dropdown-menu  dropdown-content  dropbtn "  style="background-color:rgb(255, 255, 255) ; border-inline-end-width: 2px;" aria-labelledby="dropdownMenuButton1">
+                                            <li>4 GB RAM|64 GB ROM</li>
+                                    <li> 16.59 cm Display </li>
+                                    <li> 13MP | 8Mp Front Camera</li>
+                                    <li> MediaTek Helio G80 Processer</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+
+                
+
+                                <div class="col-3 border p-3 shadow p-3 mb-5 bg-body rounded">
+                                    <div class="dropdown">
+                                        <button class="dropbtn  bold border-0 bg-transparent w-100">
+                                            <div>
+                                                <img class="pl-3" src="Icons/ONeplus.jpg" width="98px" height="150px" alt="img" />
+                                <h3 class="pt-3"><span>&#8377;</span>.<strong class="red">29,999</strong></h3>
+                                            </div>
+                                            OnePlus Nord 5G</button>
+                                        <div class="dropbtn ">
+                                            <ul class="dropdown-menu  dropdown-content  dropbtn "  style="background-color:rgb(255, 255, 255) ; border-inline-end-width: 2px;" aria-labelledby="dropdownMenuButton1">
+                                                <li>3 GB RAM|32 GB ROM</li>
+                                                <li>16.54 cm Display </li>
+                                                <li>48MP+8MP | 32MP+8Mp Front Camera</li>
+                                                <li> Qualcomm Snapdragon 765G Processor</li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+    
+
+
+                                    <div class="col-3 border p-3 shadow p-3 mb-5 bg-body rounded">
+                                        <div class="dropdown">
+                                            <button class="dropbtn  bold border-0 bg-transparent w-100">
+                                                <div>
+                                                    <img class="pl-lg-5" src="Icons/Asus.jpg" width="130px" height="150px" alt="img" />
+                                                    <h3 class="pt-3"><span>&#8377;</span>.<strong class="red">11,999</strong></h3>
+                                                </div>
+                                                Asus ZenFone Max Pro M2</button>
+                                            <div class="dropbtn ">
+                                                <ul class="dropdown-menu  dropdown-content  dropbtn "  style="background-color:rgb(255, 255, 255) ; border-inline-end-width: 2px;" aria-labelledby="dropdownMenuButton1">
+                                                    <li>3GB RAM | 32 GB ROM</li>
+                                    <li> 15.9 cm Display</li>
+                                    <li> 12MP+5MP | 13Mp Front Camera</li>
+                                    <li>Qualcomm Snapdragon 660 Octa Core Processor</li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                    <!-- 2nd row ends -->
+
+                </div>
+                <!-- mobile-List ends -->
+            </div>
+
+        </div>
+
+    </div>
+</div>
+    </main>
+
+ <!-- Footer Part -->
+<footer class="container-fluid p-md-0 min-vw-100" >
+
+    <div class="container-fluid p-md-0  ps-3 min-vw-100 "  style="background-color: #6F4E37; ">
+        <div class="row align-items-start justify-content-around text-center " style="background-color: #926443; "> 
+        <a  href="#" style="background-color: #926443;color: rgb(255, 255, 255);">Back to top</a>  
+    </div>
+
+    <div class="container-fluid p-md-0  ps-3 min-vw-100 "  style="background-color: #6F4E37; ">
+        <div class="row align-items-start justify-content-around "  style="background-color: #6F4E37; "> 
+    
+            <div class="col " >
+                <p class="pt-3 m-0 " style="font-weight: bold;color: rgb(255, 255, 255)" bold>Get to know about us </p>
+                <p class="m-1"> <a href="#"  style="color: rgb(255, 255, 255);">About Us</a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Careers</a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Wholesale</a></p>
+            </div>
+            <div class="col">
+                <p class="pt-3 m-0" style="font-weight: bold; color: rgb(255, 255, 255)" bold>Connect with us</p>
+                <p class="m-1"> <a href="https://www.facebook.com/facebook"  style="color: rgb(255, 255, 255);"> <img  id="logo" src="Icons/Facebook.png" alt="zoom" width="25" height="25" /> Facebook</a></p>
+                <p class="m-1"><a href="https://twitter.com/?lang=en"  style="color: rgb(255, 255, 255);"><img  id="logo" src="/Icons/twitter.png" alt="zoom" width="25" height="25" /> Twitter</a></p>
+                <p class="m-1"><a href="https://www.instagram.com/"  style="color: rgb(255, 255, 255);"><img  id="logo" src="/Icons/instagram.png" alt="zoom" width="25" height="25" /> Instagram</a></p>
+                <p class="m-1"><a href="https://www.youtube.com/"  style="color: rgb(255, 255, 255);"><img  id="logo" src="/Icons/Youtube.png" alt="zoom" width="25" height="25" /> Youtube</a></p>
+            </div>
+            <div class="col " >
+                <p class="pt-3 m-0 " style="font-weight: bold; color: rgb(255, 255, 255)" bold>Help </p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Payments </a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 254, 254);">Shipping</a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Cancellation & Return</a></p>
+            </div>
+            <div class="col">
+                <p class="pt-3 m-0" style="font-weight: bold; color: rgb(255, 255, 255)" bold>Make Money with us</p>
+                <p class="m-1"> <a href="#"  style="color: rgb(255, 255, 255);">Return Policy</a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Terms of use</a></p>
+                <p class="m-1"><a href="SecurityDetails.html"    style="color: rgb(255, 255, 255);">Security</a></p>
+                <p class="m-1"><a href="#"  style="color: rgb(255, 255, 255);">Privacy</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid p-md-0  ps-3 min-vw-100 "  style="background-color: #6F4E37; ">
+        <div class="row align-items-start justify-content-around text-center "  style="background-color: #6F4E37; "> 
+            <p class="pt-2" style="background-color: #6F4E37; height: 35px; font-weight: bold; color: rgb(255, 255, 255) ;">© 2017–2021 Company, Inc.</p>  
+    </div>
+
+    </div>
+    
+
+</footer>
+
+    <script src="./js/Mobile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>
